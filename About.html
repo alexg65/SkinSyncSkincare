@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>SkinSync Luxury Skincare</title> 
+<meta name= "description" content= "Interactive Website for SkinSync">
+<link rel="stylesheet" href="page2.css"> <!-- Link to one of my external CSS files -->
+</head>
+<body style="background-color: white">
+
+<header class="header">
+    <div class="header-container">
+        
+        <div class="logo">
+            <img src="images/logo.jpg" alt="SkinSync Logo" class="logo-img">
+            <h1>Skin Sync</h1>
+        </div>
+
+        
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+<div class="form-container">
+        <button class="open-form-btn" onclick="toggleForm()">Skin Assessment</button>
+        
+        <div class="contact-form" id="contactForm">
+            <h2>Contact Us</h2>
+            <p>Please fill in the details below:</p>
+            <form id="skincareForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="skin-type">What is your skin type?</label>
+                <select id="skin-type" name="skin-type" required>
+                    <option value="">Select...</option>
+                    <option value="oily">Oily</option>
+                    <option value="dry">Dry</option>
+                    <option value="combination">Combination</option>
+                    <option value="sensitive">Sensitive</option>
+                </select>
+                
+                <label for="skin-concerns">What are your primary skin concerns?</label>
+                <textarea id="skin-concerns" name="skin-concerns" placeholder="E.g., acne, redness, wrinkles" rows="4" required></textarea>
+                
+                <label for="routine">How often do you follow a skincare routine?</label>
+                <select id="routine" name="routine" required>
+                    <option value="">Select...</option>
+                    <option value="daily">Daily</option>
+                    <option value="few-times-week">A few times a week</option>
+                    <option value="rarely">Rarely</option>
+                </select>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script4.js"></script>
+</header>
+
+
+
+
+
+<!-- First content block -->
+    <div class="content-block">
+        
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/A3ZANxbbw-E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        
+        
+        <div class="text-container">
+            <h2>Skin Sync</h2>
+            <p>Our Luxury Skincare products are enriched with Vitamins and ingredients to nourish your skin. Our reputable brand offers you tailored solutions to your skincare needs. We at SkinSync strive for luxury, elegance and quality. </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<!-- Second content block -->
+    <div class="content-box">
+        <p class="content-text">Discover your tailored SkinSync products with us</p>
+    </div>
+
+
+
+
+
+
+<!-- third content block -->
+    <div class="content-box2">
+        <!-- Two Rectangular Boxes side by side -->
+        <div class="box-container">
+            <div class="box">Glow responsibly with skincare that's kind to your skin and the planet</div>
+            <div class="box">All our products are created and packaged with eco-friendly ingredients and materials</div>
+        </div>
+        
+        <!-- another two below the first two -->
+        <div class="box-container">
+            <div class="box">Your skin is unique your skincare should be too</div>
+            <div class="box">We tailor our products to meet your specific skincare needs</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- fourth Content Block -->
+    <div class="white-content-block">
+        <div class="text-section2">
+            <h2>Our Personalised Kits</h2>
+            <p>We believe everyones skin is unique. We encourage you to complete our skin assessments and from there we tailor our products specific to you skin needs. From here you can order your kit based off your results and recieve our products specifically for you!!</p>
+        </div>
+        <div class="image-section2">
+            <img src="images/skinkits.jpg" alt="kits Image" class="square-image">
+            <img src="images/skinkits.jpg" alt="kits Image" class="oval-image">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Contact Information -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:SkinSync@luxskin.com">SkinSync@luxuryskin.com</a></p>
+      <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      <p>Address: Dublin City University, Collins Ave Ext, Whitehall, Dublin 9</p>
+    </div>
+
+    
+    <div class="footer-nav">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="index.html">Products</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="https://instagram.com/skinsync" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  
+  <div class="map-container">
+    <h3>Locate Us</h3>
+    <p>Find the nearest SkinSync store or view our headquarters:</p>
+    <div id="map" style="height: 400px; width: 100%; margin: 20px 0;"></div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 SkinSync. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  let map;
+
+  function initMap() {
+    // Default location: Dublin
+    const defaultLocation = { lat: 53.3498, lng: -6.2603 };
+
+    // Initialize the map
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 10,
+      center: defaultLocation,
+    });
+
+    // Add a marker for the default location
+    new google.maps.Marker({
+      position: defaultLocation,
+      map: map,
+      title: "SkinSync Headquarters",
+    });
+  }
+</script>
+
+<!-- Google Maps API key from google my console -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo9sBW109d_-lkjaIqOPx3AP_vKHcthQ&callback=initMap" async defer></script>

@@ -1,0 +1,395 @@
+
+/* styling of the header */
+.header {
+    background-color: #FEF5E7; 
+    padding: 2rem 0;
+    position: relative;
+    border-bottom: 2px solid #e0e0e0; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* styling of my logo in the top corner of the webpage */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    border: 1px solid #89633B; 
+    border-radius: 5px; 
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #89633B; 
+    font-weight: bold;
+}
+
+/* styling of nav bar */
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #89633B; 
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-nav ul li a:hover {
+    background-color: #DCB995; 
+    color: #ffffff; 
+}
+
+
+/* styling of contact form when user hits skin assessment button */
+.form-container {
+    text-align: center;
+}
+
+/* styling of the button itself */
+.open-form-btn {
+    background-color: #89633B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.open-form-btn:hover {
+    background-color: #FEF5E7;
+}
+
+/* styling of the acc form that appears when clicked */
+.contact-form {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+    color: #89633B;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #89633B;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #89633B;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #89633B;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* First Content Block */
+.content-block {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* styling and positioning of the youtube video */
+.video-container {
+    flex-shrink: 0; /* Prevent shrinking of the video container */
+    margin-right: 20px; /* creates space between the youtube video and the piece of text besidse it */
+}
+
+.video-container iframe {
+    width: 560px;
+    height: 315px;
+    border-radius: 8px;
+}
+
+/* styling of the text */
+.text-container {
+    flex-grow: 1; /* Text takes the remaining space in the block after the yt video */
+    padding-left: 20px; 
+    max-width: 500px; 
+}
+
+.text-container h2 {
+    font-size: 1.5rem;
+    color: #89633B;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    color: #89633B;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+/* Second Content Box */
+.content-box {
+    background-image: url('images/back1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 300px; 
+    color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+}
+
+/* Font Styling of the line of text in my block */
+.content-text {
+    font-family: 'Georgia', serif; 
+    font-size: 2rem; 
+    text-align: center; 
+    font-weight: 400; 
+}
+
+
+
+
+
+
+/* third Content Box */
+.content-box2 {
+    background-color: white; 
+    padding: 20px;
+    display: flex;
+    height: 190px;
+    flex-direction: column; 
+    gap: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Container for Each Row of Boxes */
+.box-container {
+    display: flex;
+    gap: 20px; /* creating Space between the boxes horizontally */
+    justify-content: center; /* Centering the boxes in each row */
+}
+
+/* Rectangular Boxes side by side */
+.box {
+    width: 350px;
+    height: 90px;
+    background-color: #FEF5E7; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #333; 
+}
+
+
+
+
+
+
+
+
+/* fourth Content Block */
+.white-content-block {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 280px;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 700px; 
+    position: relative;
+}
+
+.text-section2 {
+    max-width: 400px;
+    color: #89633B;
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* styling and positioning of skinkit image */
+.image-section2 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-left: -20px; 
+}
+
+.square-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.oval-image {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; 
+    top: 50%; 
+    left: -30%; 
+    transform: translateY(-50%);
+    border: 3px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer styling */
+.footer {
+  background-color: #FEF5E7; 
+  color: #89633B; 
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-contact, .footer-nav, .footer-social {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer h3 {
+  font-size: 1.2em;
+  color: #89633B; 
+  margin-bottom: 10px;
+}
+
+.footer p, .footer a {
+  color: #89633B;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.footer a:hover {
+  color: #89633B; 
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin: 5px 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #89633B; 
+}
+
+
+

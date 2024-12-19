@@ -1,0 +1,502 @@
+
+/* Styling for the header */
+.header {
+    background-color: #FEF5E7; 
+    padding: 2rem 0;
+    position: relative;
+    border-bottom: 2px solid #e0e0e0; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+
+
+
+/* Styling for my logo in top corner of page */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    border: 1px solid #89633B; 
+    border-radius: 5px; /* rounded edge corners on my logo image*/
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #89633B; 
+    font-weight: bold;
+}
+
+/* styling of the nav bar */
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #89633B; 
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-nav ul li a:hover {
+    background-color: #DCB995; 
+    color: #ffffff; 
+}
+
+
+
+
+
+
+
+
+
+
+/* Styling for contact form when user clicks skin assessment icon in top corner */
+.form-container {
+    text-align: center;
+}
+
+/* styling of the button itself */
+.open-form-btn {
+    background-color: #89633B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.open-form-btn:hover {
+    background-color: #FEF5E7;
+}
+
+/* styling of the contact form itself after buttons been clicked */
+.contact-form {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+    color: #89633B;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #89633B;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #89633B;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #89633B;
+}
+
+
+
+
+
+
+
+
+
+/* first content block styling */
+.content-block {
+    background-image: url('images/main.jpg'); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px; 
+    color: beige;
+    display: flex;
+    align-items: center;
+    padding-left: 50px; 
+    box-sizing: border-box;
+}
+
+/* styling of the text */
+.text-container {
+    max-width: 400px; 
+}
+
+.content-block h1 {
+    font-size: 2.5rem; 
+    margin: 0;
+    line-height: 1.2;
+}
+
+.content-block p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Second Content Block Styling */
+.white-content-block {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 280px;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 700px; 
+    position: relative;
+}
+
+.text-section {
+    max-width: 400px;
+    color: #89633B;
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* styling of the serum image */
+.image-section {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-left: -20px; 
+}
+
+.square-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.oval-image {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; 
+    top: 50%; 
+    left: -30%; /* used to have the oval sitting slightly over the square */
+    transform: translateY(-50%);
+    border: 3px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Third Content Block Styling */
+.beige-content-block {
+     background-image: url('images/back1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    gap: 280px;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    height: 700px; 
+    box-sizing: border-box;
+}
+
+/* styling of the text */
+.text-section {
+    max-width: 400px;
+    color: #89633B;
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+}
+
+/* styling of the more info button that links to my blog page */
+.buy-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #89633B;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; 
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+    background-color: #8b5e3c; 
+}
+
+/* styling of our skinkits image */
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.hovering-image {
+    position: absolute;
+    width: 430px; 
+    height: 480px;
+    border-radius: 60%; 
+    border-color: #F7EADD;
+    object-fit: cover; 
+    z-index: 2;
+    transform: translateY(10%); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fourth content block, my java script carousel feature of the products sold */
+.carousel-container {
+    background-color: #FEF5E7; 
+    padding: 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-title {
+    font-size: 2rem;
+    color: #89633B;
+    margin-bottom: 20px;
+}
+
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.carousel {
+    overflow: hidden;
+    width: 600px; 
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease; 
+}
+
+.carousel-item {
+    min-width: 600px; 
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #89633B;
+}
+
+/* styling the arrows on the carousel that move the pictures */
+.carousel-btn {
+    background-color: #89633B;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: #8b5e3c;
+}
+
+#prevBtn {
+    position: absolute;
+    left: -50px;
+}
+
+#nextBtn {
+    position: absolute;
+    right: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling of the footer */
+.footer {
+  background-color: #FEF5E7; 
+  color: #89633B; 
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-contact, .footer-nav, .footer-social {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer h3 {
+  font-size: 1.2em;
+  color: #89633B; 
+  margin-bottom: 10px;
+}
+
+.footer p, .footer a {
+  color: #89633B;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.footer a:hover {
+  color: #89633B; 
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin: 5px 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #89633B; 
+}
